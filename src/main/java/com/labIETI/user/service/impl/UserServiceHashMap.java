@@ -3,6 +3,7 @@ package com.labIETI.user.service.impl;
 import com.labIETI.user.entities.User;
 import com.labIETI.user.exception.UserNotFoundException;
 import com.labIETI.user.service.UserService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Service
+
 public class UserServiceHashMap implements UserService {
 
     private final Map<Long,User> userMap = new HashMap<>();

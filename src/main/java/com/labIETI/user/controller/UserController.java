@@ -5,6 +5,8 @@ import com.labIETI.user.exception.UserNotFoundException;
 import com.labIETI.user.mapper.UserMapper;
 import com.labIETI.user.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -32,7 +34,7 @@ public class UserController {
 
     @GetMapping("/{id}")
     public ResponseEntity<UserDto> findById( @PathVariable Long id ){
-        return new ResponseEntity<>(userMapper.toDto(userService.findById(id)), HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(userMapper.toDto(userService.findById(id)), HttpStatus.OK);
     }
 
     @PostMapping
