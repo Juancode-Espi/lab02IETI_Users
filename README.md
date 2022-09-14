@@ -16,6 +16,7 @@
 + Borramos el User con id 3
 ![delete](./img/delete.png)
 + miramos en bd:
+
 ![persistence2](./img/persistence2.png)
 
 ## Update User
