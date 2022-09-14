@@ -24,6 +24,7 @@
 + Actualizar usuario con id 1
 ![update](./img/update.png)
 + Miramos nuevamente la bd:
+
 ![persistence3](./img/persistence3.png)
 
 
